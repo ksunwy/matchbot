@@ -14,7 +14,7 @@ import { SubscriptionService } from './services/subscription.service';
     TypeOrmModule.forFeature([User, Payment]),
     TelegrafModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: (cfg: ConfigService) => ({ token: cfg.get('TELEGRAM_BOT_TOKEN') }),
+      useFactory: (cfg: ConfigService) => ({ token: cfg.get('8332081864:AAET6VuCm1MASQ_l2zbvGCQPyzvNB7dT1iM') }),
       inject: [ConfigService],
     }),
   ],
