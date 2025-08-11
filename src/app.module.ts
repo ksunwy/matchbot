@@ -11,7 +11,7 @@ import { TelegrafModule } from 'nestjs-telegraf';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     TelegrafModule.forRoot({
-      token: "TrsbDfZ5W5jcnEs"
+      token: "8332081864:AAET6VuCm1MASQ_l2zbvGCQPyzvNB7dT1iM"
     }),
     ScheduleModule.forRoot(),
     TypeOrmModule.forRootAsync({

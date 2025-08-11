@@ -35,5 +35,5 @@ jobs:
         docker rm matchbot || true
         docker run -d \
           --name matchbot \
-          -e BOT_TOKEN=TrsbDfZ5W5jcnEs \
+          -e BOT_TOKEN=8332081864:AAET6VuCm1MASQ_l2zbvGCQPyzvNB7dT1iM \
           ksunnnwy/matchbot:latest
