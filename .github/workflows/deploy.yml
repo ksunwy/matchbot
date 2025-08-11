@@ -27,3 +27,13 @@ jobs:
         context: .
         push: true
         tags: ksunnnwy/matchbot:latest
+
+   - name: Deploy container
+      run: |
+        docker pull ksunnnwy/matchbot:latest
+        docker stop matchbot || true
+        docker rm matchbot || true
+        docker run -d \
+          --name matchbot \
+          -e BOT_TOKEN=TrsbDfZ5W5jcnEs \
+          ksunnnwy/matchbot:latest
