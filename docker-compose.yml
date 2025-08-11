@@ -6,6 +6,7 @@ services:
     restart: always
     environment:
       - DATABASE_URL=postgres://postgres:123@db:5432/matchbot
+      - BOT_TOKEN=8332081864:AAET6VuCm1MASQ_l2zbvGCQPyzvNB7dT1iM
       - TELEGRAM_BOT_TOKEN=8332081864:AAET6VuCm1MASQ_l2zbvGCQPyzvNB7dT1iM
     depends_on:
       - db
