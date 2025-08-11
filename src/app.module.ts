@@ -5,10 +5,14 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { TelegramModule } from './telegram/telegram.module';
 import { User } from './users/user.entity';
 import { Payment } from './payments/payment.entity';
+import { TelegrafModule } from 'nestjs-telegraf';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
+    TelegrafModule.forRoot({
+      token: "TrsbDfZ5W5jcnEs"
+    }),
     ScheduleModule.forRoot(),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
@@ -27,4 +31,4 @@ import { Payment } from './payments/payment.entity';
     TelegramModule,
   ],
 })
-export class AppModule {}
+export class AppModule { }
