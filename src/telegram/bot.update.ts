@@ -150,7 +150,7 @@ export class BotUpdate {
   @Hears('📬 Связаться')
   async contact(ctx: Context) {
     try {
-      await ctx.reply('📬 Пиши сюда: @ksunnw\nОтвечаю в течение 24 часов.');
+      await ctx.reply('📬 Пиши сюда: @ksunnw\nОтвечаю в течение 24 часов');
     } catch (error) {
       console.error('Error in contact:', error);
       await ctx.reply('Не удалось отправить контактную информацию. Попробуйте позже.');
